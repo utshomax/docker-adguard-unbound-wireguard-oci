@@ -1,3 +1,4 @@
+## Modified to work with ARM architecture. (ie. rpi / oci cloud )
 ## Safe Internet with Adguard, Unbound and WireGuard - Solution
 This solution is a combination of WireGuard, AdGuard, and Unbound in a docker-compose project with the intent of enabling users to quickly and easily create and deploy a personally managed full or split-tunnel WireGuard VPN with ad blocking capabilities , family safe search, parental controls(via AdGuard), and DNS caching with additional privacy options (via Unbound). 
 
