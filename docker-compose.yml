@@ -9,12 +9,15 @@ networks:
 
 services:
   unbound:
-    image: "mvance/unbound-rpi:latest"
+    image: pedantic/unbound
     container_name: unbound
     restart: unless-stopped
     hostname: "unbound"
     volumes:
-      - "./unbound:/opt/unbound/etc/unbound/"
+      - type: bind
+        read_only: true
+        source: ./unbound/unbound.conf
+        target: /opt/unbound/etc/unbound/unbound.conf
     networks:
       private_network:
         ipv4_address: 10.2.0.200
