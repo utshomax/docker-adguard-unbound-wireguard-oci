@@ -16,8 +16,8 @@ services:
     volumes:
       - type: bind
         read_only: true
-        source: ./unbound/unbound.conf
-        target: /opt/unbound/etc/unbound/unbound.conf
+        source: "./unbound/unbound.conf"
+        target: "/opt/unbound/etc/unbound/unbound.conf"
     networks:
       private_network:
         ipv4_address: 10.2.0.200
